@@ -6,18 +6,6 @@
     <title>Volunteering Activities</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Firebase SDK -->
-    <script defer src="/__/firebase/11.4.0/firebase-app-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.4.0/firebase-performance-compat.js"></script>
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
     <style>
         body {
             background-color: #f5f5f5;
@@ -211,7 +199,7 @@
                     <img src="https://placehold.co/400x300" class="card-img-top" alt="Eco Water Bottle">
                     <div class="card-body text-center">
                         <h3 class="h4 mb-3">Eco Water Bottle</h3>
-                        <p>Sustainable and durable water bottle. Stay hydrated while reducing plastic waste.</p>
+                        <p>Sustainable stainless steel water bottle. Keeps your drinks cold for 24 hours.</p>
                         <p class="text-primary fw-bold mb-3">$24.99</p>
                         <button class="btn btn-outline-primary add-to-cart" data-activity="Eco Water Bottle" data-price="24.99">Add to Cart</button>
                     </div>
@@ -219,30 +207,192 @@
             </div>
             <div class="col-md-4">
                 <div class="card impact-card h-100">
-                    <img src="https://placehold.co/400x300" class="card-img-top" alt="Volunteer Kit">
+                    <img src="https://placehold.co/400x300" class="card-img-top" alt="Volunteer Backpack">
                     <div class="card-body text-center">
-                        <h3 class="h4 mb-3">Volunteer Kit</h3>
-                        <p>Complete starter kit including t-shirt, water bottle, and essential supplies.</p>
-                        <p class="text-primary fw-bold mb-3">$49.99</p>
-                        <button class="btn btn-outline-primary add-to-cart" data-activity="Volunteer Kit" data-price="49.99">Add to Cart</button>
+                        <h3 class="h4 mb-3">Volunteer Backpack</h3>
+                        <p>Durable backpack with multiple compartments. Perfect for carrying essentials during activities.</p>
+                        <p class="text-primary fw-bold mb-3">$39.99</p>
+                        <button class="btn btn-outline-primary add-to-cart" data-activity="Volunteer Backpack" data-price="39.99">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4" id="volunteers">Our Volunteers</h2>
+                <p class="lead text-muted mb-5">Meet the amazing individuals who are making a difference in our community</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card impact-card h-100">
+                    <img src="https://placehold.co/400x400" class="card-img-top" alt="Sarah Johnson">
+                    <div class="card-body text-center">
+                        <h3 class="h4 mb-2">Sarah Johnson</h3>
+                        <p class="text-muted mb-3">Community Service Leader</p>
+                        <p>"Leading local clean-up initiatives and elderly support programs for over 2 years. Together, we've helped over 100 seniors."</p>
+                        <div class="text-primary mb-2">200+ Hours Contributed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card impact-card h-100">
+                    <img src="https://placehold.co/400x400" class="card-img-top" alt="Michael Chen">
+                    <div class="card-body text-center">
+                        <h3 class="h4 mb-2">Michael Chen</h3>
+                        <p class="text-muted mb-3">Education Support Coordinator</p>
+                        <p>"Passionate about helping students reach their potential. Currently mentoring 15 high school students in STEM subjects."</p>
+                        <div class="text-primary mb-2">150+ Hours Contributed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card impact-card h-100">
+                    <img src="https://placehold.co/400x400" class="card-img-top" alt="Emily Rodriguez">
+                    <div class="card-body text-center">
+                        <h3 class="h4 mb-2">Emily Rodriguez</h3>
+                        <p class="text-muted mb-3">Environmental Project Leader</p>
+                        <p>"Coordinated tree planting initiatives that added 500+ trees to our community parks. Every small action counts!"</p>
+                        <div class="text-primary mb-2">180+ Hours Contributed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Get Involved</h2>
+                <p class="mb-4">Ready to make a difference? Join our volunteer community today!</p>
+                <button class="btn btn-primary btn-lg">Sign Up Now</button>
+            </div>
+        </div>
     </div>
 
+    <footer class="bg-light py-4 mt-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                    <h4 class="mb-4">Contact Us</h4>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        <div>
+                            <p class="mb-0">General Inquiries: info@volunteeringimpact.org</p>
+                            <p class="mb-0">Support: support@volunteeringimpact.org</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-telephone-fill me-2"></i>
+                        <div>
+                            <p class="mb-0">Main: (555) 123-4567</p>
+                            <p class="mb-0">Toll-free: 1-800-VOLUNTEER</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        <div>
+                            <p class="mb-0">123 Volunteer Street</p>
+                            <p class="mb-0">Community City, ST 12345</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-clock-fill me-2"></i>
+                        <div>
+                            <p class="mb-0">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p class="mb-0">Saturday: 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <p class="mb-2">Follow us on social media:</p>
+                    <a href="#" class="text-dark me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-linkedin fs-4"></i></a>
+                    <p class="mt-3 mb-0">© 2024 Volunteering Impact. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="cartOffcanvasLabel">Your Cart</h5>
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel">Your Selected Activities</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div id="cartItems" class="mb-4"></div>
-            <div class="text-end">
-                <button class="btn btn-primary">Checkout</button>
+            <div id="cartItems" class="mb-3"></div>
+            <div class="border-top pt-3">
+                <p class="fw-bold">Total Hours: <span id="totalHours">0</span></p>
+                <button class="btn btn-primary w-100" id="checkoutBtn">Proceed to Sign Up</button>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let cart = [];
+            const cartItems = document.getElementById('cartItems');
+            const totalHoursElement = document.getElementById('totalHours');
+            const cartCountElement = document.querySelector('.cart-count');
+
+            function updateCart() {
+                cartItems.innerHTML = '';
+                let totalHours = 0;
+
+                cart.forEach((item, index) => {
+                    totalHours += item.hours;
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'card mb-2';
+                    itemElement.innerHTML = `
+                        <div class="card-body">
+                            <h6 class="card-title">${item.activity}</h6>
+                            <p class="card-text mb-2">${item.hours} hours</p>
+                            <button class="btn btn-sm btn-danger remove-item" data-index="${index}">Remove</button>
+                        </div>
+                    `;
+                    cartItems.appendChild(itemElement);
+                });
+
+                totalHoursElement.textContent = totalHours;
+                cartCountElement.textContent = cart.length;
+
+                // Add event listeners for remove buttons
+                document.querySelectorAll('.remove-item').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const index = parseInt(this.dataset.index);
+                        cart.splice(index, 1);
+                        updateCart();
+                    });
+                });
+            }
+
+            // Add to cart button click handlers
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const activity = this.dataset.activity;
+                    const hours = parseInt(this.dataset.hours);
+                    cart.push({ activity, hours });
+                    updateCart();
+                    
+                    // Show the cart
+                    const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+                    cartOffcanvas.show();
+                });
+            });
+
+            // Checkout button handler
+            document.getElementById('checkoutBtn').addEventListener('click', function() {
+                if (cart.length > 0) {
+                    alert('Thank you for selecting these activities! Please proceed with the sign-up process.');
+                } else {
+                    alert('Please select at least one activity before proceeding.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
